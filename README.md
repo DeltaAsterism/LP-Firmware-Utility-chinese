@@ -2,19 +2,19 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/903cec3c-f36f-46c4-ad26-462392ebffbd/deploy-status)](https://app.netlify.com/sites/lp-firmware-utility/deploys)
 
-### Novation Launchpad firmware updating and patching on the web
+### 网页端的Novation Launchpad固件更新与修补程序
+### 中文页面：https://fw.urauto.ltd
+### 原页面：https://fw.mat1jaczyyy.com
 
-### https://fw.mat1jaczyyy.com
+Launchpad Firmware Utility是个简单的Novation Launchpad固件更新与修补工具，只需简单几步即可操作
 
-Launchpad Firmware Utility is a small web tool which allows you to update your Launchpad's firmware and apply patches to it in mere seconds.
+功能:
 
-Features:
+* 自定义色板
+* Apollo Studio Fast LED模块
+* 为Launchpad Pro MK1安装最新的CFW
 
-* Custom color palettes
-* Apollo Studio Fast LED Mod
-* Install latest CFW for LP Pro
+隐藏功能 (Konami code):
 
-Extra hidden features (Konami code):
-
-* Custom SysEx file flashing
+* 自定义SysEx文件刷写
 * ;)
