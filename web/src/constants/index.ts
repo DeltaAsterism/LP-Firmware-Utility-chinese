@@ -21,7 +21,7 @@ export const FlashableFirmwares = {
   LPMK2: LaunchpadTypes.LPMK2,
   LPPRO: LaunchpadTypes.LPPRO,
   CFY: LaunchpadTypes.CFY,
-  CUSTOM_SYSEX: "Custom SysEx File",
+  CUSTOM_SYSEX: "自定义SysEx文件",
 } as const;
 
 export type FlashableFirmwares = typeof FlashableFirmwares[keyof typeof FlashableFirmwares];
@@ -36,8 +36,8 @@ export const lpModels: FlashableFirmwares[] = [
 ];
 
 export enum PatchTypes {
-  Palette = "Custom Palette",
-  ApolloFastLED = "Apollo Studio Fast LED Mod",
+  Palette = "自定义调色板",
+  ApolloFastLED = "Apollo Studio Fast LED模块",
 }
 
 export const Patches = {
@@ -71,12 +71,12 @@ export const svgs: FirmwareMap<string> = {
 };
 
 export const bltext: FirmwareMap<string> = {
-  [FlashableFirmwares.LPX]: "the Capture MIDI button",
-  [FlashableFirmwares.LPMINIMK3]: "the User button",
-  [FlashableFirmwares.LPPROMK3]: "the Setup button",
-  [FlashableFirmwares.LPMK2]: "Session, User 1, User 2 and Mixer",
-  [FlashableFirmwares.LPPRO]: "the Setup button",
-  [FlashableFirmwares.CFY]: "the Setup button",
+  [FlashableFirmwares.LPX]: "Capture MIDI按钮",
+  [FlashableFirmwares.LPMINIMK3]: "User按钮",
+  [FlashableFirmwares.LPPROMK3]: "Setup按钮",
+  [FlashableFirmwares.LPMK2]: "Session, User 1, User 2和Mixer",
+  [FlashableFirmwares.LPPRO]: "Setup按钮",
+  [FlashableFirmwares.CFY]: "Setup按钮",
   [FlashableFirmwares.CUSTOM_SYSEX]: "",
 };
 

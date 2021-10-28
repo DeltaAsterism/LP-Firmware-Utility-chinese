@@ -2,13 +2,17 @@ html,
 body {
   margin: 0;
   background: #191919;
+  background-image: url("./assets/background.png");
+  background-position: right 0em top 100%, 0;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat, repeat;
   color: #fff;
   font-family: "Roboto Mono";
   user-select: none;
 }
 
 nav {
-  background: #292929;
+  background: #252525;
 }
 
 @font-face {

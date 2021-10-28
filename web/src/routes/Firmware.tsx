@@ -59,7 +59,7 @@ const Firmware = () => {
           .then(async (continueFlashing: any) => {
             if (!continueFlashing) return;
             noticeStore.show({
-              text: "Updating...",
+              text: "升级中...",
               dismissable: false,
               showProgress: true,
             });
@@ -72,10 +72,10 @@ const Firmware = () => {
           !deviceIsBLForFW(launchpadStore.launchpad.type, targetLp)
         )
           noticeStore.show({
-            text: `Please connect a ${targetLp} in bootloader mode to continue flashing.`,
+            text: `请将${targetLp}进入至Bootloader模式以继续刷机`,
             dismissable: true,
             svg: `./svg/${svgs[selectedLp]}.svg`,
-            bl: `You can enter the bootloader by holding ${bltext[selectedLp]} while turning your Launchpad on.`,
+            bl: `你可以在Launchpad开启时按住${bltext[selectedLp]}以进入Bootloader模式`,
             callback: cancelFlash as () => void,
           });
       } catch (e) {
@@ -176,7 +176,7 @@ const Firmware = () => {
               <div
                 data-tip={
                   type === PatchTypes.ApolloFastLED
-                    ? `In Apollo Studio 1.8.1 or newer, applying this mod to your firmware will allow for significantly faster light effects.\n This mod doesn't otherwise change the behavior of your Launchpad when using it with other software.`
+                    ? `在Apollo Studio 1.8.1或更新的版本中,应用此模块至固件中可以显著的提升灯光速率。\n This mod doesn't otherwise change the behavior of your Launchpad when using it with other software.`
                     : undefined
                 }
               >
@@ -211,9 +211,9 @@ const Firmware = () => {
         FlashableFirmwares.LPPRO,
       ] as FlashableFirmwares[]).includes(uiStore.selectedFirmware) && (
         <p className="opacity-50 text-base text-center">
-          Looking for Apollo Studio Fast LED Mod?
+          正在寻找Apollo Studio Fast LED模块？
           <br />
-          It's built into CFW by default!
+          它被默认集成在CFW中！
           <br />
         </p>
       )}
@@ -250,7 +250,7 @@ const Firmware = () => {
         }
         disabled={!launchpadStore.available}
       >
-        Update
+        升级
       </Button>
 
       <input
@@ -263,7 +263,7 @@ const Firmware = () => {
       />
 
       <p className="text-sm">
-        <span className="opacity-25">...or </span>
+        <span className="opacity-25">...或</span>
         <span
           onClick={() =>
             downloadFirmware(
@@ -274,20 +274,20 @@ const Firmware = () => {
           }
           className="opacity-75 cursor-pointer underline"
         >
-          download
+          下载
         </span>
       </p>
 
       {isWindows && (
         <p className="pt-4">
-          <span className="opacity-50">Don't forget to install </span>
+          <span className="opacity-50">不要忘记安装</span>
           <a
             href="https://github.com/mat1jaczyyy/apollo-studio/raw/master/Publish/novationusbmidi.exe"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-75 underline"
           >
-            Novation's USB driver!
+            Novation的USB驱动！
           </a>
         </p>
       )}

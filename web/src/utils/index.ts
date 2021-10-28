@@ -41,7 +41,7 @@ export const downloadCFW = async () => {
     );
   } catch (e) {
     throw new Error(
-      "An error occured while downloading the CFY. Please try again."
+      "下载CFW时出现了错误，请重试"
     );
   }
 };

@@ -118,7 +118,7 @@ const Palette = () => {
             paletteStore.dirty = true;
           });
         })
-        .catch(() => setPaletteError("Invalid palette file!"));
+        .catch(() => setPaletteError("无效的色板文件！"));
     },
     [paletteStore.palette, paletteStore.dirty]
   );
@@ -185,13 +185,13 @@ const Palette = () => {
         <div className="flex flex-row items-center py-1">
           <div className="flex-1" />
           <p className={clsx("text-xl", paletteError && "text-red-500")}>
-            {paletteError || `Selected Velocity: ${selectedColor}`}
+            {paletteError || `选中的Velocity: ${selectedColor}`}
           </p>
           <p
             onClick={() => paletteStore.reset()}
             className="flex-1 font-semibold cursor-pointer text-lg opacity-75 hover:opacity-100 duration-100 transition-opacity text-right"
           >
-            {uiStore.konamiSuccess ? "RESTET" : "RESET"}
+            {uiStore.konamiSuccess ? "重置" : "重置"}
           </p>
         </div>
       </div>
@@ -213,9 +213,9 @@ const Palette = () => {
               type="file"
               ref={fileRef}
             />
-            <Button onClick={() => fileRef.current!.click()}>Import</Button>
+            <Button onClick={() => fileRef.current!.click()}>导入</Button>
             <Button onClick={() => createRetinaPalette(paletteStore.palette)}>
-              Export
+              导出
             </Button>
           </div>
 

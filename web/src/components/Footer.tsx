@@ -10,6 +10,7 @@ const Footer = () => (
     >
       github
     </a>
+    <span>chinese translate by DeltaAsterism</span>
   </footer>
 );
 

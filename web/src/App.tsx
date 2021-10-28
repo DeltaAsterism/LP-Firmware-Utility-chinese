@@ -40,14 +40,14 @@ const App = () => {
       autorun(() => {
         if (wasmStore.available === undefined)
           noticeStore.show({
-            text: "Loading...",
+            text: "加载中...",
             showProgress: true,
             dismissable: false,
           });
         else if (wasmStore.available === true) noticeStore.hide();
         else
           noticeStore.show({
-            text: "Please use a browser that supports WebAssembly (eg. Chrome or Edge)",
+            text: "请使用支持WebAssembly的浏览器访问 (例如Chrome或Edge)",
           });
       }),
     [noticeStore, wasmStore.available]
@@ -79,6 +79,11 @@ const App = () => {
             )}
           </CSSTransition>
         </SwitchTransition>
+        <span className="w-full bottom-0 pb-8 text-center absolute">
+          <span className="opacity-25">
+            chinese translate by DeltaAsterism
+          </span>
+        </span>  
         <span className="w-full bottom-0 pb-2 text-center absolute">
           <span className="opacity-25">
             built by Brendonovich & mat1jaczyyy ©{" "}
@@ -91,6 +96,11 @@ const App = () => {
           >
             github
           </a>
+        </span>
+        <span className="w-full top-0 pb-2 text-center absolute">
+          <span>
+            work in progress.部分链接还路由至国外，部分地区可能会访问异常（如CFW固件下载）
+          </span>
         </span>
       </div>
     </div>

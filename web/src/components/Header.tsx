@@ -17,7 +17,7 @@ const Header = ({ disabled }: any) => {
   return useObserver(() => (
     <nav className="w-full h-16 flex flex-row items-stretch justify-between relative">
       <div className="flex-1 flex flex-row items-center px-4">
-        <p className="font-bold text-2xl">Launchpad Utility</p>
+        <p className="font-bold text-2xl">Launchpad实用工具</p>
       </div>
       <div
         className="flex flex-row justify-center text-xl text-center"
@@ -28,7 +28,7 @@ const Header = ({ disabled }: any) => {
       </div>
       <div className="flex-1 flex flex-row items-center justify-end px-4">
         <span className="flex flex-row items-center text-xl">
-          {lpStore.available ? lpStore.launchpad?.type || "No Launchpad Detected" : "WebMIDI Unsupported (Use Chrome or Edge)"}
+          {lpStore.available ? lpStore.launchpad?.type || "未检测到Launchpad" : "WebMIDI无法启用（请使用Chrome或Edge）"}
           <div
             className={clsx(
               "w-4 h-4 ml-4 rounded-full border border-black",
