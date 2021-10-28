@@ -3,6 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/903cec3c-f36f-46c4-ad26-462392ebffbd/deploy-status)](https://app.netlify.com/sites/lp-firmware-utility/deploys)
 
 ### 网页端的Novation Launchpad固件更新与修补程序
+### Netlify Proxy Page：http://t-lfu.urauto.ltd/
 ### 中文页面：https://fw.urauto.ltd
 ### 原页面：https://fw.mat1jaczyyy.com
 
