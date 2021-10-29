@@ -282,7 +282,7 @@ const Firmware = () => {
         <p className="pt-4">
           <span className="opacity-50">不要忘记安装</span>
           <a
-            href="https://github.com/mat1jaczyyy/apollo-studio/raw/master/Publish/novationusbmidi.exe"
+            href="https://download.urauto.ltd/files/novation/usbmididriver.exe"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-75 underline"
