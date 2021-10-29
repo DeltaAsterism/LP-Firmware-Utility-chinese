@@ -6,7 +6,7 @@ Chinese Site Status[![Netlify Status](https://api.netlify.com/api/v1/badges/55f0
 
 ### 网页端的Novation Launchpad固件更新与修补程序
 ### Netlify Page：https://lp-fwutil-cn.netlify.app/
-### CNAME：https://fw.urauto.ltd
+### CNAME(with CDN)：https://fw.urauto.ltd
 ### 原页面：https://fw.mat1jaczyyy.com
 
 Launchpad Firmware Utility是个简单的Novation Launchpad固件更新与修补工具，只需简单几步即可操作
