@@ -31,7 +31,7 @@ export const portsMatch = (input: string, output: string) =>
 export const downloadCFW = async () => {
   try {
     const response = await axios.get(
-      "https://gitee.com/delta-asterism/lpp-performance-cfw/raw/master/build/cfw.syx"
+      "https://gitee.com/api/v5/repos/delta-asterism/lpp-performance-cfw/contents/build/cfw.syx"
     );
 
     return new Uint8Array(
