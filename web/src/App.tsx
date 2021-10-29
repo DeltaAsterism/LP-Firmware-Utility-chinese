@@ -99,7 +99,7 @@ const App = () => {
         </span>
         <span className="w-full top-0 pb-2 text-center absolute">
           <span>
-            work in progress.部分链接还路由至国外，部分地区可能会访问异常（如CFW固件下载）
+            work in progress...
           </span>
         </span>
       </div>

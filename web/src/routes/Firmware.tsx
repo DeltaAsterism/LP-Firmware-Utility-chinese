@@ -280,7 +280,7 @@ const Firmware = () => {
 
       {isWindows && (
         <p className="pt-4">
-          <span className="opacity-50">不要忘记安装</span>
+          <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装</span>
           <a
             href="https://download.urauto.ltd/files/novation/usbmididriver.exe"
             target="_blank"
