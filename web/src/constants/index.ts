@@ -71,12 +71,12 @@ export const svgs: FirmwareMap<string> = {
 };
 
 export const bltext: FirmwareMap<string> = {
-  [FlashableFirmwares.LPX]: "Capture MIDI按钮",
-  [FlashableFirmwares.LPMINIMK3]: "User按钮",
-  [FlashableFirmwares.LPPROMK3]: "Setup按钮",
+  [FlashableFirmwares.LPX]: "Capture MIDI",
+  [FlashableFirmwares.LPMINIMK3]: "User",
+  [FlashableFirmwares.LPPROMK3]: "Setup",
   [FlashableFirmwares.LPMK2]: "Session, User 1, User 2和Mixer",
-  [FlashableFirmwares.LPPRO]: "Setup按钮",
-  [FlashableFirmwares.CFY]: "Setup按钮",
+  [FlashableFirmwares.LPPRO]: "Setup",
+  [FlashableFirmwares.CFY]: "Setup",
   [FlashableFirmwares.CUSTOM_SYSEX]: "",
 };
 

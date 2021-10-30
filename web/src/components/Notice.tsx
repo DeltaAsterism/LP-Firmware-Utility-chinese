@@ -15,7 +15,7 @@ const Notice = () => {
       {state.svg && <img src={state.svg} alt="Launchpad Illustration" />}
       {state.bl && <span>{state.bl}</span>}
       {state.showProgress && <div className={clsx("progress w-64 h-2 mt-4")} />}
-      {state.dismissable && <Button onClick={noticeStore.hide}>Close</Button>}
+      {state.dismissable && <Button onClick={noticeStore.hide}>关闭</Button>}
     </div>
   ));
 };

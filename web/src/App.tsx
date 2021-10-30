@@ -81,7 +81,7 @@ const App = () => {
         </SwitchTransition>
         <span className="w-full bottom-0 pb-8 text-center absolute">
           <span className="opacity-25">
-            chinese translate by DeltaAsterism，illustrator by Twitter@hitsukuya
+            chinese translate by DeltaAsterism，illustrator by Twitter{" "}@hitsukuya
           </span>
         </span>
         <span className="w-full bottom-0 pb-2 text-center absolute">
@@ -96,11 +96,6 @@ const App = () => {
           >
             github
           </a>
-        </span>
-        <span className="w-full top-0 pb-2 text-center absolute">
-          <span>
-            work in progress...
-          </span>
         </span>
       </div>
     </div>

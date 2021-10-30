@@ -175,7 +175,7 @@ export default class Launchpad {
   uploadPalette(palette: number[], paletteIndex: number = 0) {
     if (!isCustomFW(this.type))
       throw new Error(
-        "Uploading palettes requires a Launchpad Pro running the Custom Firmware"
+        "请使用运行Custom Firmware（CFW）的Launchpad Pro以进行调色板的上传"
       );
 
     this.sendSysex(CFW_PALETTE_UPLOAD_START);

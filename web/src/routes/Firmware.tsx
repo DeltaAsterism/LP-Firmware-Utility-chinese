@@ -176,7 +176,7 @@ const Firmware = () => {
               <div
                 data-tip={
                   type === PatchTypes.ApolloFastLED
-                    ? `在Apollo Studio 1.8.1或更新的版本中,应用此模块至固件中可以显著的提升灯光速率。\n This mod doesn't otherwise change the behavior of your Launchpad when using it with other software.`
+                    ? `在Apollo Studio 1.8.1或更新的版本中,应用此模块至固件中可以显著的提升灯光速率。\n 此模块并不会影响Launchpad与其他软件的使用。`
                     : undefined
                 }
               >
@@ -207,7 +207,6 @@ const Firmware = () => {
       </div>
 
       {([
-        FlashableFirmwares.CFY,
         FlashableFirmwares.LPPRO,
       ] as FlashableFirmwares[]).includes(uiStore.selectedFirmware) && (
         <p className="opacity-50 text-base text-center">
@@ -218,14 +217,25 @@ const Firmware = () => {
         </p>
       )}
 
+      {([
+        FlashableFirmwares.CFY,
+      ] as FlashableFirmwares[]).includes(uiStore.selectedFirmware) && (
+        <p className="opacity-50 text-base text-center">
+          Apollo Studio Fast LED模块默认集成在CFW中
+        </p>
+      )}
+
       {uiStore.selectedFirmware === LaunchpadTypes.CFY && paletteStore.dirty && (
         <p className="text-base text-center">
           <span className="opacity-50">
-            Upload custom palettes to CFW <br /> in the{" "}
+            通过{" "}
           </span>
           <Link to="/palette" className="opacity-75 text-white underline">
-            Palette section
+            调色
           </Link>
+          <span className="opacity-50">
+            {" "}将调色板导入CFW <br />
+          </span>
         </p>
       )}
 
@@ -235,7 +245,7 @@ const Firmware = () => {
           FlashableFirmwares.LPPROMK3,
         ] as FlashableFirmwares[]).includes(uiStore.selectedFirmware) && (
           <div className="flex flex-col items-center py-2 space-y-2">
-            <p className="text-lg">Current Palette:</p>
+            <p className="text-lg">当前调色板：</p>
             <PaletteGrid width={350} />
           </div>
         )}
@@ -274,13 +284,13 @@ const Firmware = () => {
           }
           className="opacity-75 cursor-pointer underline"
         >
-          下载
+          下载固件文件
         </span>
       </p>
 
       {isWindows && (
         <p className="pt-4">
-          <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装</span>
+          <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装{" "}</span>
           <a
             href="https://download.urauto.ltd/files/novation/usbmididriver.exe"
             target="_blank"

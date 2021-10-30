@@ -78,7 +78,7 @@ export default class WasmStore extends BaseStore {
           " " +
           e.message
       );
-      throw new Error("Something went wrong while patching the firmware file.");
+      throw new Error("修复固件时发生了错误 :(");
     }
 
     return FS.readFile("firmware/output.syx");
@@ -98,7 +98,7 @@ export default class WasmStore extends BaseStore {
           " " +
           e.message
       );
-      throw new Error("The firmware file is invalid. Please try again.");
+      throw new Error("固件文件无效，请重试");
     }
 
     return lpModels[selected];

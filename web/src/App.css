@@ -7,7 +7,7 @@ body {
   background-blend-mode: overlay;
   background-repeat: no-repeat, repeat;
   color: #fff;
-  font-family: "Roboto Mono";
+  font-family: "HarmonyOS Sans";
   user-select: none;
 }
 
@@ -16,8 +16,8 @@ nav {
 }
 
 @font-face {
-  font-family: "Roboto Mono";
-  src: url("./assets/RobotoMono-Regular.ttf");
+  font-family: "HarmonyOS Sans";
+  src: url("./assets/fonts/HarmonyOS_Sans_SC_Regular.ttf");
 }
 
 select {

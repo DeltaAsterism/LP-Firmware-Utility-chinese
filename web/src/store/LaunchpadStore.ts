@@ -26,7 +26,7 @@ export default class LaunchpadStore extends BaseStore {
             () =>
               this.rootStore.notice.show({
                 text:
-                  "检测到当前连接的Launchpad自制固件为旧版本。建议进行更新",
+                  "检测到当前连接的Launchpad CFW为旧版本。建议进行更新",
                 dismissable: true,
               }),
             500
