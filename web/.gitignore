@@ -1,4 +1,5 @@
 build/
 src/assets/main.css
 node_modules/
-src/assets/background.psd
+src/assets/bg.psd
+src/assets/1.png

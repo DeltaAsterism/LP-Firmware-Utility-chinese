@@ -297,7 +297,7 @@ const Firmware = () => {
             rel="noopener noreferrer"
             className="opacity-75 underline"
           >
-            Novation的USB驱动！
+            Novation USB驱动！
           </a>
         </p>
       )}

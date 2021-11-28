@@ -3,9 +3,9 @@ body {
   margin: 0;
   background: #191919;
   background-image: url("./assets/background.png");
-  background-position: right 0em top 100%, 0;
+  background-position: right bottom;
   background-blend-mode: overlay;
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
   color: #fff;
   font-family: "HarmonyOS Sans";
   user-select: none;

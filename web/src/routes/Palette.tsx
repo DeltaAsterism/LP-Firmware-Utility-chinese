@@ -223,7 +223,8 @@ const Palette = () => {
             isCustomFW(launchpadStore.launchpad.type!) && (
               <div className="flex flex-col items-center space-y-2">
                 <div className="flex items-center justify-center text-lg">
-                  <p style={{ margin: 0, marginRight: 5 }}>Index:</p>
+                  // Index要如何翻译
+                  <p style={{ margin: 0, marginRight: 5 }}>目录:</p>
                   <select
                     onChange={(e) => setPaletteIndex(parseInt(e.target.value))}
                     value={paletteIndex}
@@ -235,7 +236,7 @@ const Palette = () => {
                     <option value={4}>4</option>
                   </select>
                 </div>
-                <Button onClick={handlePaletteUpload}>Upload</Button>
+                <Button onClick={handlePaletteUpload}>上传</Button>
               </div>
             )}
         </div>
