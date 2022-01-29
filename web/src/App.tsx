@@ -81,8 +81,16 @@ const App = () => {
         </SwitchTransition>
         <span className="w-full bottom-0 pb-8 text-center absolute">
           <span className="opacity-25">
-            chinese translate by DeltaAsterism，illustrator by Twitter{" "}@hitsukuya
+            chinese translate by DeltaAster，illustrator by Twitter{" "}
           </span>
+          <a
+            href="https://twitter.com/hitsukuya"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-75 underline"
+          >
+            @hitsukuya
+          </a>
         </span>
         <span className="w-full bottom-0 pb-2 text-center absolute">
           <span className="opacity-25">

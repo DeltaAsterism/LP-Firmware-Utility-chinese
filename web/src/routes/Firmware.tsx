@@ -292,8 +292,8 @@ const Firmware = () => {
         <p className="pt-4">
           <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装{" "}</span>
           <a
-            href="https://amazonaws.urauto.ltd/files/novation/usbmididriver.exe"
-            target="_blank"
+            href="https://dl.deltaasterism.com/storage/novation/usbdriver-2.22.exe"
+            target="_self"
             rel="noopener noreferrer"
             className="opacity-75 underline"
           >
