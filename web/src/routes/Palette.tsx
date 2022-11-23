@@ -223,7 +223,6 @@ const Palette = () => {
             isCustomFW(launchpadStore.launchpad.type!) && (
               <div className="flex flex-col items-center space-y-2">
                 <div className="flex items-center justify-center text-lg">
-                  // Index要如何翻译
                   <p style={{ margin: 0, marginRight: 5 }}>目录:</p>
                   <select
                     onChange={(e) => setPaletteIndex(parseInt(e.target.value))}

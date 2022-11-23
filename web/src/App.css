@@ -7,7 +7,7 @@ body {
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   color: #fff;
-  font-family: "MiSans";
+  font-family: "GlobalFonts";
   user-select: none;
 }
 
@@ -16,8 +16,8 @@ nav {
 }
 
 @font-face {
-  font-family: "MiSans";
-  src: url("./assets/fonts/MiSans-Regular.ttf");
+  font-family: "GlobalFonts";
+  src: url("./assets/fonts/HarmonyOS_Sans_SC_Medium.woff2");
 }
 
 select {
@@ -150,4 +150,5 @@ button:hover:not(:disabled) {
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
+  font-family: "GlobalFonts";
 }

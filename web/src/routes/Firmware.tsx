@@ -75,7 +75,7 @@ const Firmware = () => {
             text: `请将${targetLp}进入至Bootloader模式以继续刷机`,
             dismissable: true,
             svg: `./svg/${svgs[selectedLp]}.svg`,
-            bl: `你可以在Launchpad开启时按住${bltext[selectedLp]}以进入Bootloader模式`,
+            bl: `按住${bltext[selectedLp]}按钮插入数据线开启Launchpad即可进入Bootloader模式`,
             callback: cancelFlash as () => void,
           });
       } catch (e) {
@@ -292,12 +292,12 @@ const Firmware = () => {
         <p className="pt-4">
           <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装{" "}</span>
           <a
-            href="https://hoshibox.deltaasterism.com/download/driver"
+            href="https://box.arkitosekai.net/download/driver"
             target="_self"
             rel="noopener noreferrer"
             className="opacity-75 underline"
           >
-            Novation USB驱动！
+            Novation USB驱动
           </a>
         </p>
       )}
