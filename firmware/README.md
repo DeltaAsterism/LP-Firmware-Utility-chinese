@@ -1,6 +1,6 @@
-# Launchpad Stock Firmware Storage
+# Launchpad Firmware Storage
 
-Here storaged the official firmware for Launchpad with .syx and .bin file
+Here storaged the official firmwares of Launchpad with .syx and .bin files
 
 这里存放了所有Novation Launchpad的官方固件，有.syx跟.bin的格式
 
