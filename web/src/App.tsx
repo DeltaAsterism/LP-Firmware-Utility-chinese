@@ -81,7 +81,7 @@ const App = () => {
         </SwitchTransition>
         <span className="w-full bottom-0 pb-8 text-center absolute">
           <span className="opacity-25">
-            translate by Arkito,illustrator by Twitter{" "}
+            translate by Arkito, illustrator by Twitter{" "}
           </span>
           <a
             href="https://twitter.com/hitsukuya"
