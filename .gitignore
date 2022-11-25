@@ -360,3 +360,6 @@ out
 
 # VS Code
 .vscode
+
+# Novation Components Firmwares json
+ncfw-list.json
