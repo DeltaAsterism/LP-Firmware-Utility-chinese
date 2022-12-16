@@ -2,7 +2,7 @@
 
 Here storaged the official firmwares of Launchpad with .syx and .bin files
 
-这里存放了所有Novation Launchpad的官方固件，有.syx跟.bin的格式
+这里存放了所有Novation Launchpad MK3 Series的官方固件，有.syx跟.bin的格式
 
 Here's the list:
 
