@@ -172,7 +172,7 @@ const Modes = () => {
       <p className={clsx("text-lg", modeError && "text-red-500")}>
         {modeError ||
           (modeStore.modeName
-            ? `Loaded Mode: ${modeStore.modeName}`
+            ? `已加载的模式: ${modeStore.modeName}`
             : "没有载入自定义用户模式！")}
       </p>
       <Launchpad size={300} colors={modeStore.modeColors} />
@@ -205,7 +205,7 @@ const Modes = () => {
         {lpStore.launchpad &&
           [LaunchpadTypes.LPX, LaunchpadTypes.LPMINIMK3].includes(
             lpStore.launchpad.type
-          ) && <Button onClick={downloadXMode}>Download</Button>}
+          ) && <Button onClick={downloadXMode}>加载</Button>}
         <Button
           disabled={
             !modeStore.modeBinary ||
