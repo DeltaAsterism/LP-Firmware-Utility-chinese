@@ -2,7 +2,8 @@ html,
 body {
   margin: 0;
   background: #191919;
-  background-image: url("./assets/background.webp");
+  background-image: url("./assets/background.png");
+  background-size: 530px;
   background-position: right bottom;
   background-blend-mode: overlay;
   background-repeat: no-repeat;

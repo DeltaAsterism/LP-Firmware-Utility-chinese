@@ -81,20 +81,20 @@ const App = () => {
         </SwitchTransition>
         <span className="w-full bottom-0 pb-8 text-center absolute">
           <span className="opacity-25">
-            translate by Arkito, illustrator by Twitter{" "}
+            translate by Arkito, illustrator by {" "}
           </span>
           <a
-            href="https://twitter.com/hitsukuya"
+            href="https://www.pixiv.net/artworks/98472941"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-75 underline"
           >
-            @hitsukuya
+            ica
           </a>
         </span>
         <span className="w-full bottom-0 pb-2 text-center absolute">
           <span className="opacity-25">
-            built by Brendonovich & mat1jaczyyy ©{" "}
+            create by Brendonovich & mat1jaczyyy ©{" "}
           </span>
           <a
             href="https://github.com/mat1jaczyyy/LP-Firmware-Utility"
