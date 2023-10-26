@@ -292,7 +292,7 @@ const Firmware = () => {
         <p className="pt-4">
           <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装{" "}</span>
           <a
-            href="https://box.arkitosekai.net/download/driver"
+            href="https://box.arkitosekai.net/res/driver"
             target="_self"
             rel="noopener noreferrer"
             className="opacity-75 underline"
