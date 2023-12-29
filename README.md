@@ -1,10 +1,7 @@
 # Launchpad Firmware Utility
 
 #### Launchpad Firmware Utility是个简单的Novation Launchpad固件更新与修补工具
-* Link：https://lfu.arkitosekai.net  
-* Netlify Bak Link：https://lfu-zh-nlf.netlify.app  
-* CloudFlare Pages Bak Link: https://lfu-zh-cf.pages.dev  
-* Original Site：https://fw.mat1jaczyyy.com  
+* Link：https://lfu.arkitosekai.net
 
 ****
 功能:
