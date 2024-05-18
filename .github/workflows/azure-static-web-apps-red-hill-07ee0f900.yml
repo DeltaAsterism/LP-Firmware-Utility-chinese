@@ -33,7 +33,6 @@ jobs:
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
-          NODE_VERSION: 18.16.1
           PRE_BUILD_COMMAND: npm install -g pnpm
           CUSTOM_BUILD_COMMAND: pnpm install && pnpm build
 
