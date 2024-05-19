@@ -25,7 +25,7 @@ export default class LaunchpadStore extends BaseStore {
           setTimeout(
             () =>
               this.rootStore.notice.show({
-                text: "The Launchpad Pro currently connected is running an old version of the Custom Firmware. It is highly recommended that you update it.",
+                text: "当前连接的Launchpad Pro正在运行旧版本的自制固件，强烈建议你进行升级。",
                 dismissable: true,
               }),
             500

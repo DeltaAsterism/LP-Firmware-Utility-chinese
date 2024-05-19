@@ -23,7 +23,7 @@ import { patchMF64 } from "../store/mf64";
 
 const isWindows = window.navigator.platform.indexOf("Win") !== -1;
 
-const CUSTOM_SYSTEX = "Custom SysEx File";
+const CUSTOM_SYSTEX = "自定义SysEx文件";
 
 export default function () {
   const uiStore = useStore(({ ui }) => ui);
@@ -59,7 +59,7 @@ export default function () {
         .then(async (continueFlashing: any) => {
           if (!continueFlashing) return;
           noticeStore.show({
-            text: "Updating...",
+            text: "更新中...",
             dismissable: false,
             showProgress: true,
           });
@@ -73,10 +73,10 @@ export default function () {
         !deviceIsBLForFW(launchpadStore.launchpad.type, targetLp)
       )
         noticeStore.show({
-          text: `Please connect a ${targetLp} in bootloader mode to continue flashing.`,
+          text: `请连接 ${targetLp} 并进入 Bootloader 模式以继续刷写`,
           dismissable: true,
           svg: `./svg/${firmwareConfig.svg}.svg`,
-          bl: `You can enter the bootloader by holding ${firmwareConfig.blText} while turning your Launchpad on.`,
+          bl: `你可以按住 ${firmwareConfig.blText} 并连接数据线启动 Launchpad 以进入 Bootloader 模式`,
           callback: cancelFlash as () => void,
         });
     } catch (e: any) {
@@ -183,14 +183,14 @@ export default function () {
                     !uiStore.options["Custom Palette"])
                 }
               >
-                Custom Palette
+                自定义调色板
               </span>
             </div>
           </div>
         )}
         {firmwareConfig.fastLED === true && (
           <div className={"w-auto"}>
-            <div data-tip="In Apollo Studio 1.8.1 or newer, applying this mod to your firmware will allow for significantly faster light effects.\n This mod doesn't otherwise change the behavior of your Launchpad when using it with other software.">
+            <div data-tip="在 Apollo Studio 1.8.1 或更新的版本中，应用此补丁可以大大加快灯光效果。此补丁不会在你使用其他软件时生效。">
               <input
                 type="checkbox"
                 checked={uiStore.options["Apollo Studio Fast LED Mod"]}
@@ -206,7 +206,7 @@ export default function () {
                     !uiStore.options["Apollo Studio Fast LED Mod"])
                 }
               >
-                Apollo Studio Fast LED Mod
+                Apollo Studio Fast LED模块
               </span>
             </div>
             <ReactTooltip
@@ -218,7 +218,7 @@ export default function () {
         )}
         {firmwareConfig.novationIdSpoof === true && (
           <div className={"w-auto"}>
-            <div data-tip="Applying this mod to your firmware will allow for using your Midi Fighter 64 with multiple applications at once on Windows, provided you have installed the Novation USB driver. This mod doesn't otherwise change the behavior of your Midi Fighter 64 when using it with other operating systems.">
+            <div data-tip="当你安装了Novation USB驱动并应用此补丁，可以使你的 MIDI Fighter 64 在Windows系统中同时连接多个应用程序。连接其他操作系统时本补丁不生效。">
               <input
                 type="checkbox"
                 checked={uiStore.options["Novation ID Spoof"]}
@@ -234,7 +234,7 @@ export default function () {
                     !uiStore.options["Novation ID Spoof"])
                 }
               >
-                Spoof Novation VID for USB driver
+                伪装Novation VID以使用USB驱动
               </span>
             </div>
             <ReactTooltip
@@ -257,9 +257,9 @@ export default function () {
 
       {firmwareConfig.apolloSupport === "cfw" && (
         <p className="opacity-50 text-base text-center">
-          Looking for Apollo Studio support?
+          正在寻找 Apollo Studio 兼容?
           <br />
-          It's built into CFW by default!
+          它被默认集成在CFW中!
           <br />
         </p>
       )}
@@ -299,12 +299,12 @@ export default function () {
               )
             }
           >
-            Download
+            下载
           </Button>
           <div className="text-sm max-w-lg text-center">
             <p className="my-1">
               <span className="opacity-25">
-                Install the firmware using the official{" "}
+                通过官方软件{" "}来安装固件
               </span>
               <a
                 href="https://store.djtechtools.com/pages/midi-fighter-utility"
@@ -317,7 +317,7 @@ export default function () {
             </p>
             <div className="whitespace-pre-wrap text-center">
               <span className="opacity-25">
-                Connect your Midi Fighter 64, and then navigate to
+                连接你的 MIDI Fighter 64，接着定向到
               </span>
               <br />
               {["Tools", "Midifighter", "Load Custom Firmware", "For a 64"].map(
@@ -332,7 +332,7 @@ export default function () {
               )}
               <br />
               <span className="opacity-25">
-                and select the downloaded firmware file.
+                然后选择你刚刚下载的固件文件安装。
               </span>
             </div>
           </div>
@@ -349,10 +349,10 @@ export default function () {
             }
             disabled={!launchpadStore.available}
           >
-            Update
+            更新
           </Button>
           <p className="text-sm">
-            <span className="opacity-25">...or </span>
+            <span className="opacity-25">...或者 </span>
             <span
               onClick={() =>
                 downloadFirmware(
@@ -363,7 +363,7 @@ export default function () {
               }
               className="opacity-75 cursor-pointer underline"
             >
-              download
+              下载单独固件文件
             </span>
           </p>
         </>
@@ -380,7 +380,7 @@ export default function () {
 
       {isWindows && (
         <p className="pt-4">
-          <span className="opacity-50">请勿在运行Ableton Live与Max时进行升级，同时记得安装{" "}</span>
+          <span className="opacity-50">请勿在运行Ableton Live时进行升级，同时记得安装{" "}</span>
           <a
             href="https://box.arkitosekai.net/res/driver"
             target="_blank"
